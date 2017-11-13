@@ -1,0 +1,35 @@
+{
+  "name": "Total deductable amount > SGD2,500",
+  "children": [
+    {
+      "name": "Total sum of bills within period > SGD5,000",
+      "children": [
+        {
+          "name": "Decline"
+        },
+        {
+          "name": "Total number of bills > 5",
+          "children": [
+            {
+              "name":"Decline"
+            },
+            {
+              "name": "Accept"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Historical claim amount anomalous", 
+      "children": [
+        {
+          "name": "Accept"
+        },
+        {
+          "name": "Decline"
+        }
+      ]
+    }
+  ]
+}
