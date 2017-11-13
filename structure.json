@@ -1,33 +1,57 @@
 {
-  "name": "Total deductable amount > SGD2,500",
+  "name": "Health Impairment Declared (Y/N)",
   "children": [
     {
-      "name": "Total sum of bills within period > SGD5,000",
+      "name": "More than 2 high risk condition",
       "children": [
         {
           "name": "Decline"
         },
         {
-          "name": "Total number of bills > 5",
+          "name": "Any past hospitalization record?",
           "children": [
             {
               "name":"Decline"
             },
             {
-              "name": "Accept"
+              "name": "Any past policy declined?",
+              "children": [
+              {
+                "name":"Decline"
+              },
+              {
+                "name":"Accept with Exclusion"
+              }
+            ]            
             }
           ]
         }
       ]
     },
     {
-      "name": "Historical claim amount anomalous", 
+      "name": "Any previously declared conditions?", 
       "children": [
         {
-          "name": "Accept"
+          "name": "Unhealthy BMI range",
+          "children": [
+              {
+                "name":"Age > 50 years old",
+                "children": [
+                  {
+                    "name":"Decline"
+                  },
+                  {
+                    "name":"Accept with Exclusion"
+                  }
+                ]
+              },
+              {
+                "name":"Decline"
+              }
+            ]
         },
         {
-          "name": "Decline"
+          "name": "Accept"
         }
       ]
     }
