@@ -2,7 +2,7 @@
   "name": "Health Impairment Declared (Y/N)",
   "children": [
     {
-      "name": "More than 2 high risk condition",
+      "name": "More than 2 high risk conditions",
       "children": [
         {
           "name": "Decline"
@@ -29,7 +29,7 @@
       ]
     },
     {
-      "name": "Any previously declared conditions?", 
+      "name": "Any previously declared condition?", 
       "children": [
         {
           "name": "Unhealthy BMI range",
