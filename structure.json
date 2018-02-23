@@ -1,26 +1,26 @@
 {
-  "name": "Health Impairment Declared (Y/N)",
+  "name": "Have PMR Record (Y/N)",
   "children": [
     {
-      "name": "More than 2 high risk conditions",
+      "name": "Past medical test past 5 years",
       "children": [
         {
-          "name": "Decline"
+          "name": "Non-Standard"
         },
         {
-          "name": "Any past hospitalization record?",
+          "name": "Father risk proxy (sum assured < $50k)",
           "children": [
             {
-              "name":"Decline"
+              "name":"Non-Standard"
             },
             {
-              "name": "Any past policy declined?",
+              "name": "Any last policy declined?",
               "children": [
               {
-                "name":"Decline"
+                "name":"Non-Standard"
               },
               {
-                "name":"Accept with Exclusion"
+                "name":"Standard"
               }
             ]            
             }
@@ -29,29 +29,29 @@
       ]
     },
     {
-      "name": "Any previously declared condition?", 
+      "name": "BMI > 35", 
       "children": [
         {
-          "name": "Unhealthy BMI range",
+          "name": "Annual Income < $20k",
           "children": [
               {
                 "name":"Age > 50 years old",
                 "children": [
                   {
-                    "name":"Decline"
+                    "name":"Non-Standard"
                   },
                   {
-                    "name":"Accept with Exclusion"
+                    "name":"Standard"
                   }
                 ]
               },
               {
-                "name":"Decline"
+                "name":"Non-Standard"
               }
             ]
         },
         {
-          "name": "Accept"
+          "name": "Standard"
         }
       ]
     }
